@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{text-align: center;}
+        p{text-align: center;}
+        
+    </style>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="container alert alert-info">
+    
+    <div class="card alert alert-info">
+        <h1  >Birthday List</h1>
+        <div>
+            <p>This website is setup for you to enter all your family and friends birthdays!</p>
+        </div>
+        <div class="card-body background">
+            <div class="row">
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-date">Birthday</label>
+                        <input type="date" class="form-control" id="new-date">
+                    </div>
+                </div>
+            
+            </div><br>
+            <div>
+                <button id="add" class="btn btn-primary btn-lg">Create</button>
+                
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table striped">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Birthday</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+        
+
+    <script src="week10.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
